@@ -25,7 +25,6 @@ func main() {
 
 	if *versionCheck {
 		fmt.Printf("version %0.2f\n", version)
-
 		os.Exit(0)
 	}
 
@@ -46,7 +45,7 @@ func main() {
 
 	if len(games) > 0 {
 		for i, g := range games {
-			fmt.Printf("%d. %v\n", (i + 1), g.ToString())
+			fmt.Printf("\n%d. %v", (i + 1), g.ToString())
 		}
 	} else {
 		fmt.Println("No games found")
