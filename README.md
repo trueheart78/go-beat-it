@@ -2,13 +2,12 @@
 
 A command-line client that reaches out to [HowLongToBeat.com](https://howlongtobeat.com) and returns related data.
 
-
 ## Usage
 
 It returns the first page of results (18 max), so being specific helps.
 
 ```sh
-hltb -g "final fantasy 6"
+go-beat-it -g "final fantasy 6"
 
 1. Final Fantasy VI (Final Fantasy III NA)
 game.php?id=3519
@@ -19,7 +18,7 @@ Average : 41
 ```
 
 ```sh
-hltb -g "horizon zero dawn"
+go-beat-it -g "horizon zero dawn"
 
 1. Horizon Zero Dawn
 game.php?id=26784
