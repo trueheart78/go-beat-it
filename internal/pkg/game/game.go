@@ -12,7 +12,6 @@ type Game struct {
 }
 
 func (g Game) ToString() string {
-
 	return ""
 }
 

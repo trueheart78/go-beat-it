@@ -33,6 +33,7 @@ func Submit(name string, url string) (html io.Reader, err error) {
 
 	if res.StatusCode != http.StatusOK {
 		err = fmt.Errorf("Response is not OK (%d)", res.StatusCode)
+		return
 	}
 	html = req.Body
 	return
