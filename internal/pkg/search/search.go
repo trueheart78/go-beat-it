@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"net/url"
 	"strings"
+	"time"
 )
 
 const (
@@ -13,8 +14,11 @@ const (
 	hltbURL   = "https://howlongtobeat.com/search_main.php?&page=1"
 )
 
+// Submit sends a POST request to the passed url
 func Submit(name string, url string) (html io.Reader, err error) {
-	client := &http.Client{}
+	client := http.Client{
+		Timeout: time.Duration(5 * time.Second),
+	}
 	req, err := http.NewRequest("POST", url, strings.NewReader(formData(name)))
 	if err != nil {
 		return nil, err
