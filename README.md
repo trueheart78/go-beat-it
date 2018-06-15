@@ -1,5 +1,7 @@
 # Go! Beat It!
 
+![it crowd](it-crowd.gif)
+
 A command-line client that reaches out to [HowLongToBeat.com](https://howlongtobeat.com) and returns related data.
 
 ## Usage
