@@ -1,6 +1,8 @@
 // Package game makes a Game struct available
 package game
 
+import "fmt"
+
 // Game contains details of how long to beat
 type Game struct {
 	Name     string
@@ -12,7 +14,7 @@ type Game struct {
 }
 
 func (g Game) ToString() string {
-	return ""
+	return fmt.Sprintf("%v\n%v\nMain    : %v\nExtra   : %v\nComplete: %v\nAverage : %v\n", g.Name, g.URL, g.Main, g.Extra, g.Complete, g.Average)
 }
 
 // NewGame constructs a new game

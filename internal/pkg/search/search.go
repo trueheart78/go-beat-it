@@ -10,8 +10,8 @@ import (
 )
 
 const (
-	userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36"
-	hltbURL   = "https://howlongtobeat.com/search_main.php?&page=1"
+	userAgent  = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36"
+	DefaultURL = "https://howlongtobeat.com/search_main.php?&page=1"
 )
 
 // Submit sends a POST request to the passed url
@@ -35,7 +35,7 @@ func Submit(name string, url string) (html io.Reader, err error) {
 		err = fmt.Errorf("Response is not OK (%d)", res.StatusCode)
 		return
 	}
-	html = req.Body
+	html = res.Body
 	return
 }
 
