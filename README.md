@@ -6,7 +6,7 @@ A command-line client that reaches out to [HowLongToBeat.com](https://howlongtob
 
 ## Usage
 
-Download you preferred executable from [the Releases page](/releases) and extract it. That's it!
+Download your preferred executable from [the Releases page](https://github.com/trueheart78/go-beat-it/releases) and extract it. That's it!
 
 It returns the first page of results (18 max), so being specific helps.
 
